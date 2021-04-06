@@ -1,0 +1,117 @@
+/* Valine样式魔改 */
+#vcomment button {
+    padding: 0.3rem 0.8rem;
+    border-color: #fff;
+    background-color: #e58a8a;
+    color: #fff;
+    font-size: 0.7rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat {
+    float: right;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    font-size: 0.7rem;
+    transition: all 0.3s;
+}
+
+/* 作者卡片栏添加一个彩花背景 */
+.card-info-avatar:hover {
+    background: url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
+}
+
+/* 全局自定义思源宋体字体 */
+body {
+	font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+}	
+
+#nav #site-name {
+	font-family: 'Comic Sans MS',sans-serif;
+	font-size: 23px;
+}
+
+#nav .site-page {
+	font-family: 'Source Sans Pro',"Noto Serif SC",Helvetica,Arial,Menlo,Monaco,monospace,sans-serif;
+	font-size: 0.8rem;
+}
+
+#page-header.full_page #site-title {
+	font-family: "Segoe Script","Ink Free","Segoe Print";
+}
+
+/* 菜单栏子标签添加右移动态效果 */
+#nav .menus_items .menus_item .menus_item_child li a:hover {
+	transform: translateX(.3rem);
+}
+
+/* 页脚透明 */
+#footer {
+    background: transparent !important;
+}
+
+/* 非主页页面透明 */
+#page-header.full_page, #page-header.not-home-page {
+	background: transparent;
+}
+
+/* 文章顶部图透明 */
+#page-header {
+     background: transparent !important;
+}
+#page-header.post-bg:before {
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: block;
+     width: 100%;
+     height: 100%;
+     background: transparent !important; 
+     content: '';
+}
+
+/* 修复暗夜模式页脚的bug */
+[data-theme='dark'] #footer-wrap {
+	padding: 0 0!important;
+	height: 0!important;
+}
+
+/* 透明化主题后各种标题居中适配 */
+@media only screen and (max-width: 768px) {
+	#page-header #site-title {
+		margin: 20px;
+	}
+	
+	#page-header.full_page #site-info {
+		top: 33%
+	}
+	
+	#page-header #site-subtitle {
+		margin: -10px;
+	}
+}
+
+/* 全局卡片透明化 */
+:root {
+  /* --card-bg: #fff; */
+  --card-bg: #ffefefd9;
+}
+
+[data-theme="dark"] {
+  /* --card-bg: #121212; */
+  --card-bg: #12121288;
+  --btn-hover-color: #787878;
+  --btn-bg: #1f1f1f;
+  --btn-hover-color: #ff3f3f;
+  --btn-bg: #a153ff;
+  /* --font-color: rgba(255,255,255,0.7); */
+  /* --hr-border: rgba(255,255,255,0.4); */
+  --font-color: rgb(255, 255, 255);
+  --hr-border: rgb(161, 83, 255);
+}
